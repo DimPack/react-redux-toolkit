@@ -1,12 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countReducer from './countSlice'
-
+import rootReducer from "./rootReducer";
 
 const store = configureStore({
-    reducer: {
-        count: countReducer,
-        // users: useReducer,
-    }
+  reducer: rootReducer,
 });
 
 export default store;
